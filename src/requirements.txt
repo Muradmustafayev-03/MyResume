@@ -1,3 +1,4 @@
 flask
 fitz
 pdfkit
+waitress
