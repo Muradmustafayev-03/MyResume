@@ -43,6 +43,4 @@ def download_resume_fr():
 
 
 if __name__ == '__main__':
-    from waitress import serve
-
-    serve(app, host=HOST, port=PORT)
+    app.run(host=HOST, port=PORT)
