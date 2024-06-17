@@ -17,27 +17,27 @@ OUTPUT_FR = 'Murad_Mustafayev_CV_fr.pdf'
 
 @app.route('/')
 def home():  # put application's code here
-    return 'Hello World!'
+    return render_template('index.html')
 
 
-@app.route('/resume/en/', methods=['GET'])
+@app.route('/cv/en/', methods=['GET'])
 def resume_en(): return render_template(HTML_EN)
 
 
-@app.route('/resume/fr/', methods=['GET'])
+@app.route('/cv/fr/', methods=['GET'])
 def resume_fr(): return render_template(HTML_FR)
 
 
-@app.route('/resume/download/en/', methods=['GET'])
+@app.route('/cv/en/download', methods=['GET'])
 def download_resume_en():
-    input_url = f'http://{HOST}:{PORT}/resume/en/'
+    input_url = f'http://{HOST}:{PORT}/cv/en/'
     get_pdf(input_url, OUTPUT_EN)
     return send_from_directory('../', OUTPUT_EN, as_attachment=True)
 
 
-@app.route('/resume/download/fr/', methods=['GET'])
+@app.route('/cv/fr/download', methods=['GET'])
 def download_resume_fr():
-    input_url = f'http://{HOST}:{PORT}/resume/fr/'
+    input_url = f'http://{HOST}:{PORT}/cv/fr/'
     get_pdf(input_url, OUTPUT_FR)
     return send_from_directory('../', OUTPUT_FR, as_attachment=True)
 
