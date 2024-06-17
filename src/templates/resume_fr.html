@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murad Mustafayev CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume_styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="floating-button">
+        <a href="http://localhost:8080/resume/download/fr/" download="Murad_Mustafayev_CV_fr.pdf">
+            <i class="fas fa-download"></i> Télécharger le CV
+        </a>
+    </div>
+    <div class="floating-button language">
+        <a href="http://localhost:8080/resume/en/">
+            <i class="fas fa-language"></i> Version anglaise
+        </a>
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <div class="photo">
+                <img src="{{ url_for('static', filename='img/id_photo.jpg') }}" alt="Votre Photo">
+            </div>
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p><i class="fas fa-envelope"></i><a href="mailto:muradmustafayev03@gmail.com">muradmustafayev03@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+994513302003">+994 51 330 20 03</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/murad-mustafayev/">murad-mustafayev</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/Muradmustafayev-03">Muradmustafayev-03</a></p>
+            </div>
+            <br>
+            <div class="skills">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Python, C, C++, Java</li>
+                    <li>OpenCV, Pillow, Dlib</li>
+                    <li>TensorFlow, Keras, Pytorch</li>
+                    <li>Numpy, Matplotlib, Scikit-Learn</li>
+                    <li>Git, Docker, Services Cloud</li>
+                </ul>
+            </div>
+            <br>
+            <div class="languages">
+                <h2>Langues</h2>
+                <ul>
+                    <li>Anglais (Courant)</li>
+                    <li>Français (Intermédiaire)</li>
+                    <li>Russe (Natif/Bilingue)</li>
+                    <li>Azerbaïdjanais (Natif/Bilingue)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side">
+            <header>
+                <h1>Murad Mustafayev</h1>
+                <p>Ingénieur IA/ML</p>
+            </header>
+            <section class="summary">
+                <p>
+                    Ingénieur IA/ML motivé avec une carrière progressive en Vision par Ordinateur, spécialisé dans les systèmes multi-agents en temps réel. Expertise prouvée dans la conduite de projets du concept à la production, gestion efficace et mentorat des stagiaires. Expérience avec les GANs pour des applications d'image à image.
+                </p>
+            </section>
+            <section class="experience">
+                <h2>Expérience</h2>
+                <div class="job">
+                    <h3>Ingénieur Vision par Ordinateur</h3>
+                    <p>AZAI Tech, Bakou, Azerbaïdjan | 2023 - Présent</p>
+                    <ul>
+                        <li>Conception et développement de systèmes de Vision par Ordinateur multi-agents en temps réel</li>
+                        <li>Optimisation des systèmes de Vision par Ordinateur pour des conditions matérielles contraintes</li>
+                        <li>Entraînement et ajustement fin des architectures DL existantes ainsi que conception de nouvelles architectures DL</li>
+                        <li>Utilisation de l'apprentissage par transfert pour des applications de Vision par Ordinateur</li>
+                    </ul>
+                    <p>
+                        <strong>Stack Technique :</strong>
+                        Python, C++, OpenCV, Dlib, TensorFlow, Keras, Pytorch, NumPy, CUDA, YOLO, ultralytics,
+                        MobileNet, R-CNN, Docker, Azure, AWS, DeepFace, FAISS
+                    </p>
+                </div>
+                <br>
+                <div class="job">
+                    <h3>Développeur Python (Backend + IA)</h3>
+                    <p>Freelance | 2020 - Présent</p>
+                    <ul>
+                        <li>Travail avec le NLP, la Vision par Ordinateur et la Recherche d'Embeddings</li>
+                        <li>Développement de scripts Python pour automatiser les tâches de traitement de données</li>
+                        <li>Conception et développement d'APIs RESTful avec FastAPI/Flask</li>
+                    </ul>
+                    <p>
+                        <strong>Stack Technique :</strong>
+                        Python, Django, FastAPI, Flask, Regex, TensorFlow, Keras, NumPy, Pandas, Scikit-Learn, OpenCV, YOLO, ultralytics, Docker, Digital Ocean
+                    </p>
+                </div>
+            </section>
+            <section class="education">
+                <h2>Éducation</h2>
+                <div class="degree">
+                    <h3>Licence en Informatique</h3>
+                    <p>Université de Strasbourg | 2021 - 2024</p>
+                    <ul>
+                        <li>Cours pertinents : Intelligence Artificielle, Vision par Ordinateur, etc.</li>
+                        <li>Moyenne : 13.2 (Mention: Bien)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="certifications">
+                <h2>Accomplissements</h2>
+                <ul>
+                    <li>3ème place au Google AI Hackathon en Azerbaïdjan, 2024</li>
+                    <li>3ème place à l'étape locale du concours international AcInSpace, 2022</li>
+                    <li>Finaliste du ABB Innovation Startup Challenge, 2022</li>
+                    <li>Participant à l'école d'été en Strasbourg, 2022</li>
+                    <li>Participant à la Conférence Terre, Énergie & Environnement, 2021</li>
+                </ul>
+            </section>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

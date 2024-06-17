@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+  color: inherit; /* or specify any color you prefer, e.g., color: black; */
+  text-decoration: none;
+}
+
+/* Additional styling to remove the highlight when the link is focused or active */
+a:focus,
+a:active {
+  outline: none;
+}
+
+.container {
+    display: flex;
+    max-width: 1050px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-side {
+    width: 34%;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-side {
+    width: 66%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.photo img {
+    width: 80%;
+    border-radius: 50%;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info, .skills, .languages {
+    margin-bottom: 20px;
+}
+
+.contact-info h2, .skills h2, .languages h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .skills ul, .languages ul {
+    margin: 5px 0;
+}
+
+.contact-info i, .skills ul i, .languages ul i {
+    margin-right: 10px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #2980b9;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+.job, .degree {
+    margin-bottom: 10px;
+}
+
+.job h3, .degree h3 {
+    margin: 0;
+    color: #2980b9;
+}
+
+.job p, .degree p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.right-side ul {
+    list-style-type: disc;
+    margin-left: 5%;
+}
+
+.floating-button {
+    position: fixed;
+    top: 1%; /* Adjust as needed */
+    left: 5%; /* Adjust as needed */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's above other content */
+    display: none; /* Initially hide the button */
+}
+
+.floating-button:hover {
+    opacity: 1;
+    background-color: #0059dd;
+}
+
+.floating-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.floating-button.language {
+    top: 8%; /* Adjust top position */
+    background-color: #28a745; /* Green color */
+}
+
+.floating-button.language:hover {
+    background-color: #179634; /* Darker green on hover */
+}
+
+/* Media query to show button only in browser view */
+@media print {
+    .floating-button {
+        display: none !important; /* Hide button in print view */
+    }
+}
+
+@media screen {
+    .floating-button {
+        display: block; /* Show button in browser view */
+    }
+}
+
