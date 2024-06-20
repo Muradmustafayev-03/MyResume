@@ -1,4 +1,4 @@
 flask
-fitz
 pdfkit
+PyMuPDF
 waitress
